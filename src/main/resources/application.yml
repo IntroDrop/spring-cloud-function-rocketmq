@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    stream:
+      rocketmq:
+        binder:
+          name-server: 127.0.0.1:9876
+      bindings:
+        inputs:
+          destination: test-topic
+          group: test-group
